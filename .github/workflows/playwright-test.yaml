@@ -21,7 +21,7 @@ jobs:
           cache: 'maven'          # enables dependency caching
 
       - name: Build with Maven
-        run: mvn -B clean test
+        run: mvn test repots:surefire-report
 
       - name: print stuff
         run: ls -ls target/  

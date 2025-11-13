@@ -31,4 +31,8 @@ jobs:
         with:
           name: playwright-report
           path: target/surefire-reports
+      - name: Show reports
+        uses: phoenix-actions/test-reporting@v15
+        with:
+          reports: target/surefire-reports/*.xml
 

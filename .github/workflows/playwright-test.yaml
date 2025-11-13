@@ -24,7 +24,7 @@ jobs:
 
 
       - name: Build with Maven
-        run: mvn test surefire-reports:reports
+        run: mvn test surefire-report:report
 
       - name: print stuff
         run: ls -ls target/  

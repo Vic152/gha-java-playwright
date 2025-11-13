@@ -34,5 +34,6 @@ jobs:
       - name: Show reports
         uses: phoenix-actions/test-reporting@v15
         with:
+          name: Playwright Test Report
           reports: target/surefire-reports/*.xml
 

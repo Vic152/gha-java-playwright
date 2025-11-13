@@ -3,13 +3,11 @@ name: Basic Workflow
 on: workflow_dispatch
 jobs:
   basic-workflow:
-  name: Run Basic Workflow
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4
+    name: Run Basic Workflow
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-    - name: Install Dependencies
-      run: env
-
-   
+      - name: Install Dependencies
+        run: env

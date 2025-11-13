@@ -10,16 +10,15 @@ jobs:
     name: Run Playwright Tests
     runs-on: ubuntu-latest
   steps:
-  
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Set up JDK
-      uses: actions/setup-java@v4
-      with:
-        distribution: 'temurin' # or 'zulu'
-        java-version: '17'      # adjust as needed
-        cache: 'maven'          # enables dependency caching
+    # - name: Set up JDK
+    #   uses: actions/setup-java@v4
+    #   with:
+    #     distribution: 'temurin' # or 'zulu'
+    #     java-version: '17'      # adjust as needed
+    #     cache: 'maven'          # enables dependency caching
 
-    - name: Build with Maven
-      run: mvn -B clean install
+    # - name: Build with Maven
+    #   run: mvn -B clean install

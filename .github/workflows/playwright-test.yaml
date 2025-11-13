@@ -6,12 +6,12 @@ on:
       - main
 
 jobs:
-  playwright-test:
-    name: Run Playwright Tests
+  basic-workflow:
+    name: Run Basic Workflow
     runs-on: ubuntu-latest
-  steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
     # - name: Set up JDK
     #   uses: actions/setup-java@v4

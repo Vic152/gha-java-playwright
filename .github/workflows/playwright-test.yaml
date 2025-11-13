@@ -22,3 +22,6 @@ jobs:
 
       - name: Build with Maven
         run: mvn -B clean install
+
+      - name: Run Playwright Tests
+        run: mvn test -Dtest=PlaywrightTest

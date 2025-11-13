@@ -18,4 +18,4 @@ jobs:
       cache: 'maven'          # enables dependency caching
 
   - name: Build with Maven
-      run: mvn -B clean install
+    run: mvn -B clean install

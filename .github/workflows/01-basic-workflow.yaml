@@ -1,0 +1,19 @@
+name: Basic Workflow
+
+on: workflow_dispatch
+jobs:
+  basic-workflow:
+  name: Run Basic Workflow
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+
+
+    - name: Install Dependencies
+      run: env
+
+   
